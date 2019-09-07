@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  
+  userscraper:
+    image: rdv1123/userscraper:latest
+    restart: unless-stopped
+    # ports:
+    #   - 3000:3000
+    extra_hosts:
+      - "dockerhost:$DOCKERHOST"
